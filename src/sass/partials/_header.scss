@@ -2,6 +2,8 @@
   padding: ($base-size * 5) 0;
   background: $color-dark;
   color: $color-light;
+  background-image: url(https://images.pexels.com/photos/263041/pexels-photo-263041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: left;
 
   &__wrapper {
     position: relative;
@@ -12,6 +14,11 @@
 .logo {
   display: inline-block;
   line-height: 1;
+  background-color: #f1e46b;
+  padding: 10px;
+  border-radius: 10px;
+  
+  
 
   &__title {
     margin: 0 0 $base-size 0;
@@ -19,9 +26,10 @@
     font-family: $font-header;
     font-weight: $font-light;
     text-transform: uppercase;
-
+    color: rgb(85, 233, 16);
     span {
       font-weight: $font-bold;
+      color: rgb(255, 255, 255);
     }
 
   }
@@ -31,6 +39,7 @@
     font-size: ($base-size * 1.5);
     font-weight: $font-light;
     font-style: italic;
+    color: rgb(252, 19, 19);
   }
 
 }

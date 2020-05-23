@@ -8,6 +8,7 @@
   background: $color-light;
   border-bottom: 1px solid lighten($color-dark, 70%);
   border-radius: $radius;
+  background: rgba(255, 255, 255, 0.2);
 
   &__header {
     @include flex(row, center, space-between);
@@ -45,7 +46,7 @@
     @include flex(row, center, space-between);
     @include accordion-closed();
     animation: flipdown 0.5s ease both;
-  }
+    }
 
   &__params {
     margin: 0 0 ($base-size * 3) 0;
