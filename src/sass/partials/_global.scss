@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background: $color-bckg;
+  background: lighten($color-dark, 75%);
   font-family: $font-text;
   font-size: 14px;
   line-height: 1.7;
@@ -16,4 +16,4 @@ body {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 20px;
- }
+}
