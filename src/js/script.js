@@ -109,8 +109,18 @@
       const menuContainer = document.querySelector(select.containerOf.menu);
       /*add element to menu*/
       menuContainer.appendChild(thisProduct.element);
+      
     }
     
+    addToCart () {
+
+      const thisProduct = this;
+      thisProduct.name = thisProduct.data.name;
+      thisProduct.amount = thisProduct.amountWidget.value;
+      app.cart.add(thisProduct);
+    }
+
+
     getElements(){
       const thisProduct = this;
       thisProduct.accordionTrigger = thisProduct.element.querySelector(select.menuProduct.clickable);
@@ -169,6 +179,7 @@
       thisProduct.cartButton.addEventListener('click', function(event){
         event.preventDefault();
         thisProduct.processOrder();
+        thisProduct.addToCart();
       });
     }
    
@@ -185,6 +196,7 @@
       /* read all data from the form (using utils.serializeFormToObject) and save it to const formData */
       const formData = utils.serializeFormToObject(thisProduct.form);
       console.log('formData', formData);
+      thisProduct.params ={};
       /* set variable price to equal thisProduct.data.price */
       thisProduct.params={};
       let price = thisProduct.data.price;
@@ -303,13 +315,24 @@
       thisCart.getElements(element);
       thisCart.initActions();
       console.log('new Cart', thisCart);
-              
     }
+    
+    add(menuProduct) {
+      const thisCart = this;
+      console.log('adding product', menuProduct);
+      const generatedHTML = templates.cartProduct(menuProduct);
+      console.log(generatedHTML);
+      const generatedDOM = utils.createDOMFromHTML(generatedHTML);
+      console.log(generatedDOM);
+      thisCart.dom.productList.appendChild(generatedDOM);
+    }
+    
   
     getElements(element) {
       const thisCart = this;
       thisCart.dom = {};
       thisCart.dom.wrapper = element;
+      thisCart.dom.productList = document.querySelector(select.cart.productList);
       thisCart.dom.toggleTrigger = thisCart.dom.wrapper.querySelector(select.cart.toggleTrigger);
     }
    
