@@ -2,7 +2,15 @@
   padding: ($base-size * 5) 0;
   background: $color-dark;
   color: $color-light;
-
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  overflow: active;
+  background-image: url(https://images.pexels.com/photos/263041/pexels-photo-263041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: left;
+  
+  background-size: cover;
+  
   &__wrapper {
     position: relative;
   }
@@ -31,6 +39,7 @@
     font-size: ($base-size * 1.5);
     font-weight: $font-light;
     font-style: italic;
+    background:black;
   }
 
 }
