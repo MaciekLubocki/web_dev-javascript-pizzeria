@@ -257,8 +257,8 @@
       }
       /* set the contents of thisProduct.priceElem to be the value of variable price */
       /*multiply price by amount*/
-      thisProduct.Single = price;
-      thisProduct.price = thisProduct.Single * thisProduct.amountWidget.value;
+      thisProduct.priceSingle = price;
+      thisProduct.price = thisProduct.priceSingle * thisProduct.amountWidget.value;
       /* set the contents of thisProduct.priceElem to be the value of variable price */
       thisProduct.priceElem.innerHTML = thisProduct.price;
       // console.log(thisProduct.params);
@@ -419,8 +419,8 @@
       const url = settings.db.url + '/' + settings.db.order;
 
       const payload = {
-        phone : thisCart.dom.phone,
-        address: thisCart.dom.address,            
+        phone : thisCart.dom.phone.value,
+        address: thisCart.dom.address.value,            
         totalPrice : thisCart.totalPrice,
         subtotalPrice : thisCart.subtotalPrice,
         totalNumber : thisCart.totalNumber,
