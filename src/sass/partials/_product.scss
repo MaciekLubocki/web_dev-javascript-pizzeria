@@ -1,14 +1,14 @@
 .product-list {
   padding: ($base-size * 3) 0;
-  }
+}
 
 
-  .product:first-child{
-    padding-top: ($base-size * 20);
-  }
+.product:first-child{
+  padding-top: ($base-size * 20);
+}
 
 
-  .product {
+.product {
   margin: ($base-size / 2) 0;
   padding: ($base-size * 6) ($base-size * 4);
   background: $color-light;
