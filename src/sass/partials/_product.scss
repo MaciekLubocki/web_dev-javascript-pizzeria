@@ -2,19 +2,13 @@
   padding: ($base-size * 3) 0;
 }
 
-
-.product:first-child{
-  padding-top: ($base-size * 20);
-}
-
-
 .product {
   margin: ($base-size / 2) 0;
   padding: ($base-size * 6) ($base-size * 4);
   background: $color-light;
   border-bottom: 1px solid lighten($color-dark, 70%);
   border-radius: $radius;
-  
+
   &__header {
     @include flex(row, center, space-between);
     margin-bottom: ($base-size * 2);
@@ -99,9 +93,7 @@
       &.active {
         opacity: 1;
       }
-
     }
-
   }
 
   &.active {
@@ -109,16 +101,15 @@
       @include accordion-open();
     }
 
-    .product__order, .product__images {
+    .product__order,
+    .product__images {
       opacity: 1;
     }
 
     .product__icon {
       transform: rotate(180deg);
     }
-
   }
-
 }
 
 .widget-amount {
@@ -129,5 +120,4 @@
     margin: 0 ($base-size / 2);
     padding: 0;
   }
-
 }
