@@ -1,20 +1,22 @@
 .cart {
   position: absolute;
   width: 300px; // CODE CHANGED
-  right: 0;
-  top: $base-size;
+  right: 350px;
+  top: 23px;
   padding: ($base-size) ($base-size * 1.5);
-  background: $color-light;
+  background: #f1f1f1;
   border-radius: $radius;
   color: $color-main;
   font-size: $base-size;
-  box-shadow: 0 0 $base-size rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 $base-size rgba(0, 0, 0, 0.6);
+  position: fixed;
   z-index: 9999;
 
   &.active {
     .cart__content {
       @include accordion-open();
       padding: ($base-size * 1.5) 0 0 0;
+     
     }
   }
 

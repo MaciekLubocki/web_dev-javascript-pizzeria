@@ -1,14 +1,16 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(to right, 
+  background: linear-gradient(to right,
   red 20%, rgb(255, 255, 255) 20% 80%, green 80%);
   font-family: $font-text;
   font-size: 14px;
-  line-height: 1.7;
+  //   line-height: 1.8;
   font-weight: $font-normal;
   color: $color-dark;
 }

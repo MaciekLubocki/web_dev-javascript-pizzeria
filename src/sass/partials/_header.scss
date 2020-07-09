@@ -1,7 +1,15 @@
 .header {
-  padding: ($base-size * 5) 0;
-  background: $color-dark;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  padding: ($base-size * 2) 0;
+  background-image: url(https://cdn.pixabay.com/photo/2015/04/07/19/49/pizza-711662_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: $color-light;
+  box-shadow: 10px 10px 50px #000;
+  z-index: 9999;
 
   &__wrapper {
     position: relative;
@@ -10,17 +18,19 @@
 
 .logo {
   display: inline-block;
-  line-height: 1;
+  line-height: -50px !important;
 
   &__title {
-    margin: 0 0 $base-size 0;
+    margin-bottom: -15px;
     font-size: ($base-size * 4);
     font-family: $font-header;
     font-weight: $font-light;
     text-transform: uppercase;
+    text-shadow: 150px black;
 
     span {
       font-weight: $font-bold;
+
     }
   }
 
@@ -29,5 +39,44 @@
     font-size: ($base-size * 1.5);
     font-weight: $font-light;
     font-style: italic;
+    color: #000;
   }
+}
+
+.main-nav {
+  margin: 20px 0px 0px 0px;
+}
+
+.nav-btn {
+  padding: 10px 10px 30px 10px;
+  background: linear-gradient(0deg, rgba(15, 49, 0, 1) 0%, rgba(113, 124, 112, 1) 35%, rgba(214, 214, 214, 1) 100%);
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 0 $base-size rgba(0, 0, 0, 0.6);
+}
+
+.nav-btn:hover {
+  color: rgb(0, 0, 0);
+  list-style: none;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: rgb(253, 2, 2);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.open-hours {
+  line-height: 0px;
+}
+
+.head_g {
+  font-size: 36px;
+  text-align: left;
+  width: 80%;
+  font-family: $font-header;
+}
+
+.open-hours {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
 }
