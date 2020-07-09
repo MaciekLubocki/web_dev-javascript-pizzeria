@@ -9,7 +9,7 @@
         "images": ["<img class=\"active\" src=\"images/doughnut.svg\">"]
       },
       {
-        "id": "breakfast",
+        "id":"breakfast",
         "class": "small",
         "name": "Zia Giulia's Breakfast",
         "price": 9,
