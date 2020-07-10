@@ -1,6 +1,6 @@
 /* global rangeSlider */
 
-import BaseWidget from './BaseWidget.js';
+import BaseWidget from './basewidget.js';
 import { settings, select } from '../settings.js';
 import utils from '../utils.js';
 

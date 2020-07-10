@@ -1,7 +1,7 @@
 /* global flatpickr */
 
 
-import BaseWidget from './BaseWidget.js';
+import BaseWidget from './basewidget.js';
 import utils from '../utils.js';
 import { settings, select } from '../settings.js';
 
